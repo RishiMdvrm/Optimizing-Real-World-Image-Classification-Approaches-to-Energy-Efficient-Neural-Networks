@@ -15,7 +15,7 @@ Real-world deployment of deep learning models on edge devices often requires min
 ---
 
 ## 📁 Repository Structure
-<pre> ## Repository ``` ├── 01.Baseline.ipynb # Baseline MobileNetV2 setup and training ├── 02.DepthShrinker.ipynb # Implementation of DepthShrinker on MobileNetV2 ├── 03.QAT.ipynb # QAT workflow and int8 evaluation ├── 04.Cusatom pruning.ipynb # Custom iterative channel pruning pipeline ├── data_preprocessing.py # Tiny ImageNet organization and DataLoader setup ├── evaluation_metrics.py # Latency, energy, accuracy, FLOPs/Params computation └── README.md # Project description and instructions ``` </pre>
+├── 01.Baseline.ipynb # Baseline MobileNetV2 setup and training ├── 02.DepthShrinker.ipynb # Implementation of DepthShrinker on MobileNetV2 ├── 03.QAT.ipynb # QAT workflow and int8 evaluation ├── 04.Cusatom pruning.ipynb # Custom iterative channel pruning pipeline ├── data_preprocessing.py # Tiny ImageNet organization and DataLoader setup ├── evaluation_metrics.py # Latency, energy, accuracy, FLOPs/Params computation └── README.md # Project description and instructions 
 
 
 
