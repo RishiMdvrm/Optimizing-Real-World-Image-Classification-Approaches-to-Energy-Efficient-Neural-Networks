@@ -64,7 +64,12 @@ We use **Tiny ImageNet**, a compact and challenging dataset with 200 classes.
 - pynvml (for GPU power metrics)
 - ptflops (optional for FLOPs calculation)
 
-Install all dependencies using:
 
-```bash
-pip install -r requirements.txt
+## 📄 License
+This project is for academic use only (CS594: Energy-Efficient Deep Learning @ UIC).
+All rights reserved to the authors.
+
+
+## ✍️ Authors
+- **Rishi Madhavaram** – [rmadha4@uic.edu](mailto:rmadha4@uic.edu)  
+- **Leela Arun Kumar Yalamati** – [lyalam2@uic.edu](mailto:lyalam2@uic.edu)
