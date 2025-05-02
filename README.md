@@ -24,7 +24,7 @@ Main
 ├── data_preprocessing.py # Tiny ImageNet organization and DataLoader setup
 ├── evaluation_metrics.py # Latency, energy, accuracy, FLOPs/Params computation
 └── README.md # Project description and instructions
-├── ├── 0 ├── 03.QAT.ipynb # QAT workflow and int8 evaluation ├── 04.Cusatom pruning.ipynb # Custom iterative channel pruning pipeline ├── data_preprocessing.py # Tiny ImageNet organization and DataLoader setup ├── evaluation_metrics.py # Latency, energy, accuracy, FLOPs/Params computation └── README.md # Project description and instructions 
+
 ```
 
 ---
