@@ -1,1 +1,70 @@
-# Optimizing-Real-World-Image-Classification-Approaches-to-Energy-Efficient-Neural-Networks
+# Optimizing Real-World Image Classification: Approaches to Energy-Efficient Neural Networks
+
+This repository contains the code, scripts, and evaluation tools for our project exploring energy-efficient optimization techniques on MobileNetV2 using the Tiny ImageNet dataset. We compare three methods—DepthShrinker, Quantization-Aware Training (QAT), and Custom Channel Pruning—focusing on their effect on accuracy, latency, power consumption, and energy-delay product (EDP).
+
+---
+
+## 🧠 Project Summary
+
+Real-world deployment of deep learning models on edge devices often requires minimizing power usage and inference latency without sacrificing accuracy. We implement and evaluate three complementary techniques:
+
+- **DepthShrinker** – Removes redundant activation functions and fuses convolutions.
+- **QAT** – Trains the model to adapt to 8-bit integer quantization.
+- **Custom Channel Pruning** – Prunes less important filters in MobileNetV2 blocks iteratively.
+
+---
+
+## 📁 Repository Structure
+
+├── 01.Baseline.ipynb # Baseline MobileNetV2 setup and training
+├── 02.DepthShrinker.ipynb # Implementation of DepthShrinker on MobileNetV2
+├── 03.QAT.ipynb # QAT workflow and int8 evaluation
+├── 04.Cusatom pruning.ipynb # Custom iterative channel pruning pipeline
+├── data_preprocessing.py # Tiny ImageNet organization and DataLoader setup
+├── evaluation_metrics.py # Latency, energy, accuracy, FLOPs/Params computation
+├── README.md 
+
+
+---
+
+## 📊 Evaluation Metrics
+
+We evaluate models on the following metrics:
+
+- **Top-1 Accuracy**
+- **Average Latency per Image**
+- **Throughput (Images per Second)**
+- **Average GPU Power Consumption**
+- **Energy per Inference (Joules)**
+- **Energy-Delay Product (EDP)**
+
+All hardware measurements use NVIDIA’s NVML API for GPU-level power tracking.
+
+---
+
+## 📦 Dataset
+
+We use **Tiny ImageNet**, a compact and challenging dataset with 200 classes.
+
+📥 **Download here:**  
+[https://www.kaggle.com/datasets/akash2sharma/tiny-imagenet](https://www.kaggle.com/datasets/akash2sharma/tiny-imagenet)
+
+**Steps after download:**
+1. Unzip into the root directory.
+2. Run `organize_validation_data()` from `data_preprocessing.py` to structure the validation set correctly.
+
+---
+
+## ⚙️ Dependencies
+
+- Python ≥ 3.8
+- PyTorch ≥ 2.0.1
+- torchvision ≥ 0.15.2
+- numpy
+- pynvml (for GPU power metrics)
+- ptflops (optional for FLOPs calculation)
+
+Install all dependencies using:
+
+```bash
+pip install -r requirements.txt
