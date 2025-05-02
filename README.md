@@ -15,7 +15,7 @@ Real-world deployment of deep learning models on edge devices often requires min
 ---
 
 ## 📁 Repository Structure
-  .
+  Repository/
   ├── 01.Baseline.ipynb # Baseline MobileNetV2 setup and training
   ├── 02.DepthShrinker.ipynb # Implementation of DepthShrinker on MobileNetV2
   ├── 03.QAT.ipynb # QAT workflow and int8 evaluation
